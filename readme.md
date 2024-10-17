@@ -27,7 +27,6 @@ Method: POST
 Request Body:
 JSON:
 json
-Copy code
 {
 
   "ID": "1",
@@ -42,22 +41,30 @@ Method: PUT
 Request Body:
 JSON:
 json
-{
-  "name": "Jane Doe",
-  "major": "AI"
-}
+
 Response:
+
 200 OK with the updated learner details.
 404 Not Found if the learner ID doesn't exist.
 4. Delete Learner by ID
 URL: /learners/<id>
 Method: DELETE
+
 Response:
 204 No Content if the learner is deleted successfully.
 404 Not Found if the learner ID doesn't exist.
 5. Get Learner by ID
 URL: /learners/<id>
 Method: GET
+
 Response:
 200 OK with the learner's details.
 404 Not Found if the learner ID doesn't exist.
+Example Requests
+Create a Learner
+
+bash
+
+Get All Learners
+bash
+curl http://localhost:5000/learners/
