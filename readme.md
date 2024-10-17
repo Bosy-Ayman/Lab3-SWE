@@ -11,8 +11,7 @@ This API allows you to manage learners by performing basic CRUD operations (Crea
    pip install Flask
 Run the Flask app:
 
-bash
-Copy code
+
 python app.py
 The API will run locally on http://localhost:5000/.
 
@@ -30,8 +29,10 @@ JSON:
 json
 Copy code
 {
-  "name": "John Doe",
-  "major": "Data Science"
+
+  "ID": "1",
+  "name": "Bosy",
+  "major": "CSAI"
 }
 Response:
 201 Created with the updated list of learners.
@@ -41,7 +42,6 @@ Method: PUT
 Request Body:
 JSON:
 json
-Copy code
 {
   "name": "Jane Doe",
   "major": "AI"
